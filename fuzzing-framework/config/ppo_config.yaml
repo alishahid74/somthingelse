@@ -1,0 +1,28 @@
+# PPO Hyperparameters
+ppo:
+  # Network architecture
+  hidden_layers: [256, 128, 64]
+  activation: "relu"
+
+  # Training parameters
+  learning_rate: 0.0003
+  gamma: 0.99  # Discount factor
+  epsilon_clip: 0.2  # PPO clipping parameter
+  batch_size: 64
+  epochs: 10
+
+  # Experience buffer
+  buffer_size: 2048
+
+  # Reward function weights
+  reward_weights:
+    coverage_increase: 1.0
+    unique_crash: 10.0
+    execution_speed: 0.1
+    path_diversity: 0.5
+
+  # Update frequency
+  update_interval: 100  # Update after N mutations
+
+  # Exploration
+  entropy_coefficient: 0.01
