@@ -1,0 +1,26 @@
+# AFL++ Configuration
+afl:
+  # AFL++ binary path (adjust to your installation)
+  binary_path: "/usr/local/bin/afl-fuzz"
+
+  # QEMU mode settings
+  qemu_mode: true
+
+  # Fuzzing parameters
+  timeout: 1000  # milliseconds
+  memory_limit: 2048  # MB
+
+  # Mutation settings
+  deterministic_fuzzing: true
+  havoc_mode: true
+
+  # Performance options
+  persistent_mode: false
+  deferred_forkserver: false
+
+  # Experiment settings
+  experiment_duration: 36000  # 10 hours in seconds
+
+  # Output directories
+  output_dir: "./data/results"
+  input_dir: "./data/inputs"
