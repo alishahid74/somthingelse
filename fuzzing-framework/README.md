@@ -399,11 +399,6 @@ MIT License - See LICENSE file for details
 - OpenAI for PPO algorithm research
 - PyTorch team for the deep learning framework
 
-## Contact
-
-For questions or issues:
-- Open a GitHub issue
-- Email: your.email@example.com
 
 ---
 
